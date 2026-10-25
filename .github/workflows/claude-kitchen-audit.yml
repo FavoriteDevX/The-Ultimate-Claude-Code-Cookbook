@@ -1,0 +1,29 @@
+name: 🍳 Claude Kitchen Audit
+
+on:
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  audit-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Run Code Review and Quality Audit
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          # The agent runs non-interactively in CI using the token budget guardrail
+          claude "Review the code modifications introduced in this Pull Request. Search for memory leaks, anti-patterns, security vulnerabilities, or breaks from our .clauderules. Output a clean markdown summary report."
