@@ -1,4 +1,6 @@
-<img width="410" height="300" alt="image" src="https://github.com/user-attachments/assets/bb5e76cd-a7c9-4143-87dd-2db48d0c1cd2" />
+<p align="center">
+  <img width="410" height="300" alt="image" src="https://github.com/user-attachments/assets/4cc300e3-a146-476e-a549-df87be48b563" />
+</p>
 
 # 🍳 The Ultimate Claude Code Cookbook
 
