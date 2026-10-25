@@ -1,0 +1,12 @@
+{
+  "theme": "dark",
+  "maxTokensPerSession": 50000,
+  "autoApprove": {
+    "readFiles": true,
+    "listFiles": true,
+    "runReadOnlyCommands": false,
+    "modifyFiles": false,
+    "runWriteCommands": false
+  },
+  "explanation": "Low-autonomy preset. Claude must ask permission before turning on the stove (writing code, running tests, or deleting files) to avoid unexpected token charges."
+}
