@@ -1,3 +1,5 @@
+<img width="410" height="300" alt="image" src="https://github.com/user-attachments/assets/bb5e76cd-a7c9-4143-87dd-2db48d0c1cd2" />
+
 # 🍳 The Ultimate Claude Code Cookbook
 
 Welcome to **The Ultimate Claude Code Cookbook**! This is a curated collection of production-grade recipes, prompt injections, and automation configurations explicitly tailored for Anthropic's **Claude Code** CLI. 
